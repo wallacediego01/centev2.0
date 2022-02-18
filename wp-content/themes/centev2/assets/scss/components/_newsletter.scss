@@ -1,0 +1,25 @@
+._newsletter {
+    h4{
+        font-size: rem(30);
+        font-weight: 800;
+    }
+	p{
+        font-size: rem(16);
+        font-weight: 500;
+        opacity: 1;
+    }
+    ._form{
+        input{
+            &[type="submit"]{
+                display: block;
+                background: #00B608 0% 0%  padding-box;
+                width: inherit;
+                border-radius: 23px;
+                font-family: "Montserrat";
+                font-size: rem(16);
+                font-weight: 600;
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,66 @@
+._vitrine {
+    
+    .slide-bg {
+        background-color: #F4F4F4;
+        position: relative;
+        
+        video{
+            max-height: 550px;
+            
+            
+        }
+        img{
+            min-height: 550px;
+            object-fit: cover;
+        }
+        @include media-breakpoint-up(xl) {
+            height: 100vh;
+            img, video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                
+                max-height: 900px;
+            }
+        }
+    }
+    .corte{
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+
+    .slide-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        .desc {
+            p{
+                font-size: rem(18);
+            }
+        }
+    }
+
+    .actions {
+        position: absolute;
+        bottom: 60px;
+        width: 100%;
+        z-index: 50;
+    }
+
+    .swiper-pagination-bullet {
+        width: 47px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 7px;
+        opacity: 1;
+        margin-right: 12px;
+
+        &.swiper-pagination-bullet-active {
+            width: 8px;
+        }
+    }
+    
+} 

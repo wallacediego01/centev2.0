@@ -1,0 +1,59 @@
+._accordion {
+    $midnight: #2c3e50;
+$clouds: #ecf0f1;
+input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+	.tabs {
+        
+        overflow: hidden;
+      }
+      .tab {
+        width: 100%;
+        
+        overflow: hidden;
+
+        &-label {
+          background: linear-gradient(to right,  rgba(2,85,118,1) 53%,rgba(0,182,8,1) 100%);
+          display: flex;
+          padding: 0.6rem 1em;
+          border-radius: 10px;
+
+          font-size: rem(20);
+          font-weight: 600;
+          color: $white;
+          cursor: pointer;
+          
+          &::before {
+            content: "\276F";
+            width: 1em;
+            height: 1em;
+            text-align: center;
+            transition: all .35s;
+            margin-right: 8px;
+          }
+        }
+        &-content {
+          max-height: 0;
+          padding: 0 1em;
+          transition: all .35s;
+          font-size: rem(14);
+        }
+      }
+      
+      // :checked
+      input:checked {
+        + .tab-label {
+          border-bottom: 0;
+          &::before {
+            transform: rotate(90deg);
+          }
+        }
+        ~ .tab-content {
+          max-height: 100vh;
+          padding: 1em;
+        }
+      }
+}

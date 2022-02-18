@@ -1,0 +1,25 @@
+._blog {
+	background-image: url(../../img/bg-blog.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    .card-blog{
+        
+        opacity: 1;
+        height: 416px;
+    }
+	
+    .swiper-pagination-bullet {
+        width: 47px;
+        height: 8px;
+        background-color: #025576;
+        border-radius: 7px;
+        opacity: 1;
+        margin-right: 12px;
+        transition: all .2s ease;
+        
+        &.swiper-pagination-bullet-active {
+            width: 8px;
+            background-color:#00B906 ;
+        }
+    }
+}

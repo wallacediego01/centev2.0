@@ -1,0 +1,85 @@
+/* BASIC GLOBAL CSS */
+html {
+	scroll-behavior: smooth;
+}
+
+html,body{
+	font-size: 14px;
+	color: $text-color;
+	background-color: #fff;
+	@include media-breakpoint-up(lg) {
+		font-size: 16px;
+	}   
+}
+
+// Font anti-aliasing
+* {
+	font-smoothing: antialiased;
+	font-display: swap;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	box-sizing: border-box;
+	line-height: 1.4;
+}
+
+a,
+button {
+	cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"] {
+	&:focus,
+	&:active{		
+		outline: none;
+	}
+}
+
+img,
+figure {
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	color: $medium;
+	@include font-size(14);
+	margin-top: 0.25rem;
+}
+
+picture {
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+blockquote {
+	background: #F5F5F5;
+	font-style: italic;
+	border-left: 10px solid $primary;
+	margin: 1.5em 10px;
+	padding: 1.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+
+	&:before {
+		color: #ccc;
+		content: open-quote;
+		font-size: 4em;
+		line-height: 0.1em;
+		margin-right: 0.25em;
+		vertical-align: -0.4em;
+    }
+    
+    p {
+		display: inline;
+	  }   
+} 

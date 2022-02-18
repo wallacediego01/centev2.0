@@ -1,0 +1,18 @@
+._form-green {
+	.box-form{
+        background: transparent linear-gradient(45deg, #025A6F 0%, #00BC02 100%) 0% 0% no-repeat padding-box;
+        border-radius: 20px;
+
+        .title-form{
+            font-size: rem(20);
+            font-weight: 800;
+        }
+        &.title{
+            font-size: rem(45);
+            font-weight: 700;
+        }
+        
+
+        
+    }
+}

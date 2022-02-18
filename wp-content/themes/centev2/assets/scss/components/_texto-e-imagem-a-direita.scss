@@ -1,0 +1,13 @@
+._texto-e-imagem-a-direita {
+        background-image: url(../../img/bg-comp-sobre.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    
+	.ornamento{
+        position:absolute;
+        top: 0;
+        right: -20px;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,35 @@
+._page-banner {
+    background-image: url(../../img/bg-page-banner.png);
+    background-position: -50px 0px;
+    background-size: 340% 100%;
+	background-repeat: no-repeat;
+    
+    
+    @include media-breakpoint-up(lg) {
+        background-position: center top;
+        background-size: cover;
+        position: relative;
+        padding-bottom: 231px ;
+        overflow: hidden;
+    }
+    @include media-breakpoint-down(md) {
+        background-image: url(../../img/bg-banner-mobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+    h1{
+        font-weight: 700;
+    }
+
+    #breadcrumbs {
+        a{
+            color: #fff;
+        }
+    }
+    img{
+        position: absolute;
+        bottom: -18px;
+    }
+}

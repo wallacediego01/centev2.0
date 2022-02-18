@@ -1,0 +1,14 @@
+/* HOME STYLESHEET */
+
+// Swiper Components
+@import "../../node_modules/swiper/swiper";
+@import "../../node_modules/swiper/components/pagination/pagination";
+@import "../../node_modules/swiper/components/effect-fade/effect-fade";
+
+// Essential modules and components
+@import './core/essentials';
+@import './pages/home'; 
+
+// Components
+
+@import './components/vitrine';

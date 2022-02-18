@@ -1,0 +1,18 @@
+#article-page {
+    .feature-image {
+        img{
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+    }
+
+    ._card-linha-do-tempo {
+        img{
+            max-height: 180px;
+            width: 100%;
+            object-fit: cover;
+            border-bottom: 2px solid #000;
+        }
+    }
+}

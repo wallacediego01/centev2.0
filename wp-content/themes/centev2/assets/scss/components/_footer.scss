@@ -1,0 +1,68 @@
+._footer {
+    background-image: url(../../img/bg-footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+   @include media-breakpoint-down (md) {
+       background-image: url(../../img/bg-footer-cel.png);
+       background-size: cover;
+
+   }
+    
+    .contatos{
+        
+        .image{
+            i{
+                color: $primary;
+                font-size: 50px;
+            }
+           
+            
+        }
+        .subtitle{
+            font-size:rem(20);
+            font-weight: 600;
+            opacity: 1;
+        }
+        p{
+            font-size: rem(16);
+           
+        }
+    }
+    
+   
+
+    
+
+    .fot-bottom {
+        
+        p{
+            font-size: rem(14);
+            a{
+                font-size: rem(14);
+                color: $white;
+            }
+        }
+    }
+
+    .link-topo {
+        position: absolute;
+        top: 41px;
+        right: 50%;
+        transform: translateY(-50%);
+        background: transparent linear-gradient(45deg, #025576 0%, #00B608 100%) 0% 0% no-repeat padding-box;
+        @include box-center(46px);
+    }
+    @include media-breakpoint-down(md) {
+        .link-topo {
+            position: absolute;
+            top: 32px;
+            right: 42%;
+            transform: translateY(-50%);
+           
+        }
+    }
+
+    
+}

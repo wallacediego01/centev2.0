@@ -1,0 +1,95 @@
+._form{
+    p{
+        margin-bottom: 0;
+    }
+    input{
+        &[type="text"],
+        &[type="e-mail"],
+        &[type="email"],
+        &[type="tel"] {
+            background: #FFFFFF;
+            display: block;
+            width: 100%;
+            height: rem(45);
+            border: none;
+            border-radius: 23px;
+            font-size: rem(14);
+            color: #7A7A7A;
+            padding-left: 15px;
+
+            @include placeholder {
+                color: #7A7A7A;
+            };
+                       
+        }        
+    }
+
+    input[type="submit"] {
+        height: rem(45);
+    }
+
+
+    .wpcf7-list-item {
+        margin-left: 0;
+    }
+
+    textarea{
+        width: 100%;
+        height: rem(150);
+        background-color: $white;        
+        border-radius: 15px;
+        border: none;
+        font-size: rem(14);
+
+        @include placeholder {
+            color: #7A7A7A;
+        };
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .box-select{
+        background: transparent;
+        width: 100%;
+        height: rem(40);
+        border: 1px solid $black;
+        border-radius: 50px;
+        color: $primary;
+        position: relative;
+
+        &:after {
+            
+            content: "";
+            width: 0; 
+            height: 0; 
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid $primary;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        select {
+            appearance: none;
+            background-color: $white;
+            border-radius: 50px;
+            border: none;
+            padding-left: 15px;  
+            width: 100%;
+            height: 100%;
+
+            outline: none;
+
+            font-size: rem(14);
+            color: $black;
+
+            cursor: pointer;
+
+            &::-ms-expand { 
+                display: none; 
+            }
+        }
+    }
+}

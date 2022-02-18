@@ -1,0 +1,40 @@
+._box-search {
+    width: 43px;
+    height: 43px;
+    position: relative;
+
+
+	.btn-search{
+        position: absolute;
+        top:0;
+        right: 0;
+        border:0;
+        @include box-center(43px);
+        z-index:2;
+    }
+
+    
+   
+    .search{
+        width: 200px;
+        height: 43px;
+        opacity: 0;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: -25px;
+        border-radius: 50px 0 0 50px;
+        border: 0;
+        padding-left: 15px;
+        pointer-events: none;
+    }
+    &:hover,
+    &.active{
+        .search{
+            right: 25px;
+            opacity: 1;
+            z-index: 1;
+            pointer-events: inherit;
+        }
+    }
+}

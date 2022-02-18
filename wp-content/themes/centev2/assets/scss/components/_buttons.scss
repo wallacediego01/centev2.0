@@ -1,0 +1,23 @@
+.btn{
+    &.btn-outline-white {
+        border: 2px solid #fff;
+        &:hover {
+            background-color: #fff;
+            color: $black;
+        }
+    }
+    &.btn-card {
+        background: transparent linear-gradient(72deg, #025576 0%, #00BE00 100%);
+    }
+
+    &.btn-seta {
+        border-radius: 0 30px 30px 0;
+        font-size: rem(25);
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+        &:hover {
+            padding-left: 1.5rem;
+        }
+    }
+} 
